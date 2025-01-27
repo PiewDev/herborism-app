@@ -1,0 +1,12 @@
+{
+    "biomeWeight": 1,
+    "climateWeight": 1,
+    "temperatureWeight": 1,
+    "rarityWeights": {
+      "Common": 6,
+      "Uncommon": 1.5,
+      "Rare": 0.4,
+      "VeryRare": 0.1
+    }
+}
+    

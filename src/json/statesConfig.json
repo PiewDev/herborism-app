@@ -1,0 +1,5 @@
+{
+    "biomes": ["Swamp", "Forest", "Grassland", "Mountain", "Desert"],
+    "climates": ["Humid", "SemiHumid", "Neutral", "SemiArid", "Arid"],
+    "temperatures": ["Cold", "Cool", "Temperate", "Warm", "Hot"]
+}

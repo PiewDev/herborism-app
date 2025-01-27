@@ -1,0 +1,391 @@
+[
+    {
+      "name": "Melisa",
+      "description": "Planta herbácea con hojas dentadas y ovaladas, de color verde claro. Se utiliza en infusiones para calmar los nervios y mejorar la digestión.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Canela",
+      "description": "Árbol de corteza marrón rojiza, con hojas lanceoladas y flores pequeñas y blancas. La corteza se utiliza como especia aromática y para mejorar la circulación.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Uncommon",
+      "except": ["Cold", "Mountain", "SemiArid"]
+    },
+    {
+      "name": "Hierba de San Juan",
+      "description": "Planta perenne con pequeñas flores amarillas agrupadas en racimos. Se utiliza en ungüentos cicatrizantes y para aliviar la ansiedad.",
+      "baseTerrain": "Grassland",
+      "climate": "Humid",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Arid", "Desert", "Hot"]
+    },
+    {
+      "name": "Lavanda",
+      "description": "Arbusto aromático con tallos largos y flores violetas. Se utiliza en ungüentos relajantes, aromáticos y para aliviar dolores de cabeza.",
+      "baseTerrain": "Grassland",
+      "climate": "SemiArid",
+      "temperature": "Warm",
+      "rarity": "Common",
+      "except": ["Cold", "Humid", "Swamp"]
+    },
+    {
+      "name": "Caléndula",
+      "description": "Planta anual con flores de color amarillo o naranja. Se utiliza en ungüentos antiinflamatorios, cicatrizantes y para aliviar la irritación de la piel.",
+      "baseTerrain": "Grassland",
+      "climate": "Neutral",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Raíz de Estrella de Mar",
+      "description": "Raíz de color púrpura con forma estrellada. Se utiliza en pociones de clarividencia y percepción aumentada.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Rare",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Hojas de Coral",
+      "description": "Hojas de coral marino de color rojizo. Se utilizan en pociones de resistencia al veneno y purificación.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Uncommon",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Arnica",
+      "description": "Planta con tallos peludos y flores amarillas. Se utiliza en ungüentos antiinflamatorios y para aliviar el dolor muscular.",
+      "baseTerrain": "Mountain",
+      "climate": "SemiHumid",
+      "temperature": "Cool",
+      "rarity": "Uncommon",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Manzanilla",
+      "description": "Planta con pequeñas flores blancas o amarillas y un aroma similar a la manzana. Se utiliza en ungüentos calmantes, antiinflamatorios y para aliviar problemas digestivos.",
+      "baseTerrain": "Grassland",
+      "climate": "Neutral",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Romero",
+      "description": "Arbusto perenne con hojas lineales y flores azules, púrpuras o blancas. Se utiliza en ungüentos estimulantes, revitalizantes y para mejorar la circulación.",
+      "baseTerrain": "Grassland",
+      "climate": "SemiArid",
+      "temperature": "Warm",
+      "rarity": "Common",
+      "except": ["Cold", "Humid", "Swamp"]
+    },
+    {
+      "name": "Hojas de Escarcha",
+      "description": "Hojas cristalizadas que brillan con una luz tenue en la oscuridad. Se utilizan en pociones de resistencia al frío y protección contra la congelación.",
+      "baseTerrain": "Mountain",
+      "climate": "SemiHumid",
+      "temperature": "Cold",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Musgo de la Aurora",
+      "description": "Musgo luminoso que emite una luz suave en la oscuridad. Se utiliza en pociones de visión en la oscuridad y detección de magia.",
+      "baseTerrain": "Mountain",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Aloe Vera",
+      "description": "Planta suculenta con hojas carnosas y puntiagudas. Se utiliza en ungüentos hidratantes y calmantes para quemaduras solares.",
+      "baseTerrain": "Desert",
+      "climate": "SemiArid",
+      "temperature": "Warm",
+      "rarity": "Common",
+      "except": ["Cold", "Humid", "Swamp"]
+    },
+    {
+      "name": "Coco",
+      "description": "Fruto de forma redonda con una cáscara dura y fibrosa. Se utiliza en ungüentos hidratantes y suavizantes para la piel.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Hot",
+      "rarity": "Common",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Papaya",
+      "description": "Fruto de forma alargada con pulpa anaranjada y semillas negras. Se utiliza en ungüentos exfoliantes y regeneradores de la piel.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Hot",
+      "rarity": "Common",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Raíz de Marfil",
+      "description": "Raíz blanca con propiedades fortificantes. Se utiliza en pociones de fortaleza y resistencia física.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Uncommon",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Flor de la Serpiente",
+      "description": "Flor de colores brillantes que atrae a las serpientes. Se utiliza en pociones de persuasión y encantamiento animal.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Hot",
+      "rarity": "Rare",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Té de Árbol (Melaleuca)",
+      "description": "Arbusto con hojas puntiagudas y pequeñas flores blancas. Se utiliza en ungüentos antibacterianos y antifúngicos.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Uncommon",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Ylang-Ylang",
+      "description": "Árbol con flores amarillas fragantes. Se utiliza en ungüentos relajantes y aromáticos.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Hot",
+      "rarity": "Uncommon",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Tamarindo",
+      "description": "Árbol con frutos de pulpa ácida y fibrosa. Se utiliza en ungüentos exfoliantes y regeneradores de la piel.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Hot",
+      "rarity": "Uncommon",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Raíz de Coral",
+      "description": "Raíz roja que crece en las profundidades marinas. Se utiliza en pociones de respiración acuática y natación mejorada.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Rare",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Flor de las Mareas",
+      "description": "Flor que florece solo durante las mareas altas. Se utiliza en pociones de control del clima y manipulación de agua.",
+      "baseTerrain": "Swamp",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Rare",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Raíz del Sabio",
+      "description": "Raíz dorada con propiedades que aumentan la sabiduría. Se utiliza en pociones de sabiduría aumentada y claridad mental.",
+      "baseTerrain": "Grassland",
+      "climate": "Neutral",
+      "temperature": "Temperate",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Lágrimas de Cosechador",
+      "description": "Flor azul que solo florece durante la cosecha. Se utiliza en pociones de suerte y fortuna.",
+      "baseTerrain": "Grassland",
+      "climate": "Neutral",
+      "temperature": "Temperate",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Ajenjo",
+      "description": "Planta con tallos altos y hojas dentadas de color verde grisáceo. Se utiliza en ungüentos analgésicos y antiinflamatorios.",
+      "baseTerrain": "Forest",
+      "climate": "SemiHumid",
+      "temperature": "Cool",
+      "rarity": "Uncommon",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Datura",
+      "description": "Planta con grandes flores blancas o moradas y hojas lobuladas. Se utiliza en ungüentos alucinógenos y sedantes.",
+      "baseTerrain": "Forest",
+      "climate": "SemiHumid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Belladona",
+      "description": "Planta con tallos altos, flores moradas y frutos rojos brillantes. Se utiliza en ungüentos analgésicos y relajantes musculares.",
+      "baseTerrain": "Forest",
+      "climate": "SemiHumid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Espinas de Sombra",
+      "description": "Espinas negras que crecen en los bosques oscuros. Se utilizan en pociones de sigilo y ocultamiento.",
+      "baseTerrain": "Forest",
+      "climate": "SemiHumid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Flor del Susurro",
+      "description": "Flor pálida que susurra en la brisa del bosque. Se utiliza en pociones de ilusión y encantamiento.",
+      "baseTerrain": "Forest",
+      "climate": "SemiHumid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Menta",
+      "description": "Planta con hojas dentadas y aromáticas de color verde oscuro. Se utiliza en infusiones para aliviar problemas digestivos y para refrescar el aliento.",
+      "baseTerrain": "Grassland",
+      "climate": "Humid",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Ginseng",
+      "description": "Planta con raíces carnosas y tallos con hojas palmadas. Se utiliza en infusiones y ungüentos para aumentar la energía y fortalecer el sistema inmunológico.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Temperate",
+      "rarity": "Uncommon",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Ortiga",
+      "description": "Planta con hojas dentadas y peludas que producen una sensación de picor al contacto. Se utiliza en ungüentos para aliviar la inflamación y el dolor muscular, así como en infusiones para mejorar la circulación.",
+      "baseTerrain": "Grassland",
+      "climate": "Neutral",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Té",
+      "description": "Arbusto con hojas verde oscuro que se utilizan para hacer infusiones. Se utiliza en infusiones para aumentar la energía, mejorar la concentración y promover la salud general.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Hinojo",
+      "description": "Planta con tallos huecos y flores amarillas. Se utiliza en infusiones y ungüentos para aliviar problemas digestivos y cólicos, así como para aumentar la producción de leche materna.",
+      "baseTerrain": "Grassland",
+      "climate": "Neutral",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Valeriana",
+      "description": "Planta con flores rosadas o blancas y raíces con un aroma distintivo. Se utiliza en infusiones y ungüentos para calmar los nervios, reducir la ansiedad y mejorar la calidad del sueño.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Pasiflora",
+      "description": "Enredadera con flores exóticas de colores brillantes. Se utiliza en infusiones y ungüentos para aliviar el estrés, la ansiedad y mejorar la calidad del sueño.",
+      "baseTerrain": "Grassland",
+      "climate": "Humid",
+      "temperature": "Warm",
+      "rarity": "Common",
+      "except": ["Cold", "Mountain", "Arid"]
+    },
+    {
+      "name": "Consuelda",
+      "description": "Planta con hojas grandes y peludas, y flores de color púrpura o blanco. Se utiliza en ungüentos para acelerar la curación de heridas, contusiones y fracturas.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Uncommon",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Milenrama",
+      "description": "Planta con hojas finamente divididas y pequeñas flores blancas o rosadas. Se utiliza en infusiones y ungüentos para aliviar problemas digestivos, menstruales y para detener el sangrado.",
+      "baseTerrain": "Grassland",
+      "climate": "Neutral",
+      "temperature": "Temperate",
+      "rarity": "Common",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Lirio de la Araña Azul",
+      "description": "Flor con pétalos delgados y largos de color azul intenso, con un centro oscuro que se asemeja a una telaraña. Se utiliza en pociones y ungüentos para una curación ultra rápida de heridas graves y enfermedades, pero su uso es altamente peligroso y puede tener efectos secundarios graves en la mente.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Espino Sangriento",
+      "description": "Arbusto espinoso con pequeñas flores rojas y hojas oscuras. Sus espinas contienen una savia roja que se utiliza en ungüentos para detener hemorragias y tratar heridas graves.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Corazón de las Sombras",
+      "description": "Una flor negra con pétalos que parecen absorber la luz a su alrededor. Sus pétalos tienen propiedades sedantes y se utilizan en infusiones para aliviar el insomnio y calmar los nervios, pero su consumo excesivo puede sumir al individuo en una profunda melancolía.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Hojas de la Noche Eterna",
+      "description": "Hojas de un verde oscuro casi negro que brillan ligeramente en la oscuridad. Se utilizan en pociones para mejorar la visión nocturna y aumentar la percepción en la oscuridad, pero su consumo prolongado puede causar alucinaciones y paranoia.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    },
+    {
+      "name": "Susurros del Crepúsculo",
+      "description": "Una enredadera con flores blancas que emiten un suave resplandor en la penumbra. Las flores se utilizan en ungüentos y aceites esenciales para aliviar el estrés, inducir la relajación y promover el sueño reparador, pero su aroma puede provocar sueños vívidos y perturbadores.",
+      "baseTerrain": "Forest",
+      "climate": "Humid",
+      "temperature": "Cool",
+      "rarity": "Rare",
+      "except": ["Hot", "Desert", "Arid"]
+    }
+  ]
+  
+  

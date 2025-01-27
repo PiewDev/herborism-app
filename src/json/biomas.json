@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Bosque",
+      "description": "Un área con una alta densidad de árboles."
+    },
+    {
+      "name": "Pradera",
+      "description": "Un bioma de pastizales con pocas o ninguna árbol."
+    },
+    {
+      "name": "Desierto",
+      "description": "Un área árida con poca precipitación y escasa vegetación."
+    },
+    {
+      "name": "Pantano",
+      "description": "Un área de tierra saturada de agua con vegetación característica."
+    },
+    {
+      "name": "Montaña",
+      "description": "Terreno elevado con pendientes pronunciadas."
+    },
+    {
+      "name": "Costa",
+      "description": "La tierra junto al mar o el océano."
+    },
+    {
+      "name": "Tundra",
+      "description": "Un bioma sin árboles donde el crecimiento de las plantas está obstaculizado por las bajas temperaturas y los cortos períodos de crecimiento."
+    }
+  ]
+  
+  
