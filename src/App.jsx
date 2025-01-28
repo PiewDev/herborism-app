@@ -128,7 +128,14 @@ function App() {
             type="number"
             min="1"
             value={cantidad}
-            onChange={(e) => setCantidad(Math.max(1, Number(e.target.value)))}
+            onChange={(e) => {
+              const value = e.target.value;
+              if (value === "") {
+                setCantidad("");
+              } else {
+                setCantidad(Math.max(1, Number(value)));
+              }
+            }}
           />
         </div>
 
