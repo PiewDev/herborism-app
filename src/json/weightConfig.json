@@ -1,6 +1,8 @@
 {
     "biomeWeight": 1,
     "climateWeight": 1,
+    "lightWeight": 1.2,
+    "momentOfDayWeight": 1,
     "temperatureWeight": 1,
     "rarityWeights": {
       "Common": 6,

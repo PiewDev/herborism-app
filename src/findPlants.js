@@ -13,6 +13,10 @@ function getProximityScore(current, target, array) {
     return 1 - (distance / maxDistance);
 }
 
+/**
+ * @param {{baseTerrain: string, climate: string, temperature: string, light: string, momentOfDay: string}} conditions 
+ * @param {{biomes: string[], climates: string[], temperatures: string[], lights: string[], momentOfDays: string[]}} states 
+ */
 function calculatePlantWeight(plant, conditions, states, weights) {
     // Calcular puntuaciones de proximidad
     const biomeScore = getProximityScore(
@@ -33,11 +37,23 @@ function calculatePlantWeight(plant, conditions, states, weights) {
         states.temperatures
     ) * weights.temperatureWeight;
 
+    const lightScore = getProximityScore(
+        conditions.light,
+        plant.light,
+        states.lights
+    ) * weights.lightWeight;
+
+    const momentOfDayScore = getProximityScore(
+        conditions.momentOfDay,
+        plant.momentOfDay,
+        states.momentOfDays
+    ) * weights.momentOfDayWeight;
+
     // Obtener peso de rareza
     const rarityWeight = weights.rarityWeights[plant.rarity] || 1;
 
     // Peso total
-    return (biomeScore + climateScore + tempScore) * rarityWeight;
+    return (biomeScore + climateScore + tempScore + lightScore + momentOfDayScore) * rarityWeight;
 }
 
 function getWeightedPlants(conditions, number, allowDuplicates = true) {
@@ -46,7 +62,9 @@ function getWeightedPlants(conditions, number, allowDuplicates = true) {
         return !plant.except.some(excludedCondition => 
             excludedCondition === conditions.baseTerrain ||
             excludedCondition === conditions.climate ||
-            excludedCondition === conditions.temperature
+            excludedCondition === conditions.temperature ||
+            excludedCondition === conditions.light ||
+            excludedCondition === conditions.momentOfDay
         );
     });
 

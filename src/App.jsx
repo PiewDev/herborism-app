@@ -9,6 +9,8 @@ function App() {
   const [bioma, setBioma] = useState("");
   const [clima, setClima] = useState("");
   const [temperatura, setTemperatura] = useState("");
+  const [light, setLight] = useState("");
+  const [momentOfDay, setMomentOfDay] = useState("");
   const [cantidad, setCantidad] = useState(1);
   const [selectedPlants, setSelectedPlants] = useState([]);
 
@@ -21,12 +23,16 @@ function App() {
   }, {});
 
   const handleFindPlants = () => {
+
     const conditions = {
       baseTerrain: bioma,
+
+
       climate: clima,
       temperature: temperatura,
+      light: light,
+      momentOfDay: momentOfDay,
     };
-
     const results = findPlants.getWeightedPlants(conditions, cantidad, true);
     setSelectedPlants(results);
   };
@@ -44,8 +50,7 @@ function App() {
             value={bioma}
           >
             <option value="">Selecciona un bioma</option>
-            {statesConfig.biomes.map((biome) => (
-              <option key={biome} value={biome}>
+            {statesConfig.biomes.map((biome) => (<option key={biome} value={biome}>
                 {biome}
               </option>
             ))}
@@ -83,6 +88,38 @@ function App() {
             ))}
           </select>
         </div>
+
+          <div className="input-group">
+            <label htmlFor="light">Luz</label>
+            <select
+              id="light"
+              onChange={(e) => setLight(e.target.value)}
+              value={light}
+            >
+              <option value="">Selecciona una cantidad de luz</option>
+              {statesConfig.lights.map((l) => (
+                <option key={l} value={l}>
+                  {l}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="momentOfDay">Momento del día</label>
+            <select
+              id="momentOfDay"
+              onChange={(e) => setMomentOfDay(e.target.value)}
+              value={momentOfDay}
+            >
+              <option value="">Selecciona un momento del día</option>
+              {statesConfig.momentOfDays.map((moment) => (
+                <option key={moment} value={moment}>
+                  {moment}
+                </option>
+              ))}
+            </select>
+          </div>
 
         <div className="input-group">
           <label htmlFor="cantidad">Cantidad</label>

@@ -1,5 +1,7 @@
 {
-    "biomes": ["Swamp", "Forest", "Grassland", "Mountain", "Desert"],
+    "biomes": ["Muddy", "Rich", "Fertile", "Rocky", "Dry"],
     "climates": ["Humid", "SemiHumid", "Neutral", "SemiArid", "Arid"],
-    "temperatures": ["Cold", "Cool", "Temperate", "Warm", "Hot"]
+    "temperatures": ["Cold", "Cool", "Temperate", "Warm", "Hot"],
+    "lights": ["High", "Medium", "Low"],
+    "momentOfDays": ["Day","Morning","Evening", "Night"]
 }
