@@ -1,19 +1,18 @@
 /* Table styles */
 .plant-table {
   width: 100%;
-  max-width: 1200px;
   border-collapse: collapse;
   margin: 2rem 0;
   border: 2px solid #96743b;
   background-color: #f5e6c9;
   font-family: "Cardo", serif;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
   max-height: 400px;
   overflow-y: auto;
 }
-
-.plant-table th,
+.plant-list{
+  width: 100%;
+  .plant-table th,
 .plant-table td {
   padding: 12px 15px;
   text-align: left;
@@ -34,4 +33,21 @@
 
 .plant-table tbody tr:hover {
   background-color: #e4d5b7;
+}
+}
+
+
+@media (max-width: 520px) {
+  .plant-list{
+    .plant-table {
+      font-size: 0.75rem!important; /* Achica la fuente */
+    }
+  
+    .plant-table th, .plant-table td {
+      padding: 0.3rem!important; /* Reduce más el padding */
+      text-align: center!important;    
+      font-size: 0.75rem!important; 
+    }
+    
+  }
 }

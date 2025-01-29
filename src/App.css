@@ -101,7 +101,6 @@
   font-size: 1rem; /* Font size */
   cursor: pointer; /* Pointer cursor */
   border-radius: 8px; /* Rounded corners */
-  width: auto; /* Full width on mobile */
   font-weight: 600;
   padding: 12px 24px;
   font-size: 1rem;
@@ -121,7 +120,62 @@
 }
 
 /* Responsive */
+@media (max-width: 520px) {
+  .plant-table {
+    font-size: 0.85rem; /* Achica la fuente */
+  }
 
+  .plant-table th, .plant-table td {
+    padding: 0.4rem; /* Reduce más el padding */
+    text-align: center;    
+    font-size: 0.75rem; 
+  }
+  .dark-theme{
+    width: 100%;
+  }
+  .container {
+    padding-top: 6rem; /* Ajustar padding para que no se corte */
+    padding-inline: 0.5rem;
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .input-group label {
+    font-size: 0.9rem; /* Reducir tamaño de fuente */
+  }
+
+  .form-container input,
+  .form-container select {
+    padding: 10px; /* Disminuir padding */
+    font-size: 0.9rem; /* Ajuste de tamaño de fuente */
+  }
+
+  .search-button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .navbar {
+    align-items: center;
+    text-align: center;
+    padding: 0.2rem;
+    width: 100%;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+}
 @media screen and (orientation: landscape) {
   .container {
     justify-content: center;
@@ -150,10 +204,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 2rem;
   font-family: "Old Standard TT", serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   position: fixed; /* Fixed to top */
   top: 0; /* Align to top */
@@ -162,7 +215,7 @@
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .navbar-links {
