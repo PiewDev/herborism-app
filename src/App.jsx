@@ -1,11 +1,25 @@
-import React, { useState } from "react";
-import plantsData from "./json/plants.json";
+import React, { useState, useEffect } from "react";
+import PlantTable from "./components/PlantTable.jsx";
 import statesConfig from "./json/statesConfig.json";
-import weightConfig from "./json/weightConfig.json";
 import findPlants from "./findPlants";
 import "./App.css";
 
 function App() {
+  const [showPlantsList, setShowPlantsList] = useState(false);
+
+  useEffect(() => {
+    const storedShowPlantsList = localStorage.getItem('showPlantsList');
+    if (storedShowPlantsList) {
+        setShowPlantsList(storedShowPlantsList === 'true');
+    }
+}, []);
+
+useEffect(() => {
+    localStorage.setItem('showPlantsList', showPlantsList);
+}, [showPlantsList]);
+
+
+
   const [bioma, setBioma] = useState("");
   const [clima, setClima] = useState("");
   const [temperatura, setTemperatura] = useState("");
@@ -27,7 +41,6 @@ function App() {
     const conditions = {
       baseTerrain: bioma,
 
-
       climate: clima,
       temperature: temperatura,
       light: light,
@@ -38,135 +51,149 @@ function App() {
   };
 
   return (
-    <div className="container dark-theme">
-      <h1>Buscador de Plantas</h1>
+    <div className="container">
+      <nav className="navbar">
+          <div className="navbar-brand">
+              <a href="/">Buscador de Plantas</a>
+          </div>
+          <ul className="navbar-menu">
+              <li className="navbar-item">
+                <button onClick={() => setShowPlantsList(!showPlantsList)}>{showPlantsList ? "Buscar Plantas" : "Ver Lista de Plantas"}</button>
+                  
+              </li>
+          </ul>
+      </nav>
 
-      <div className="form-container">
-        <div className="input-group">
-          <label htmlFor="bioma">Bioma</label>
-          <select
-            id="bioma"
-            onChange={(e) => setBioma(e.target.value)}
-            value={bioma}
-          >
-            <option value="">Selecciona un bioma</option>
-            {statesConfig.biomes.map((biome) => (<option key={biome} value={biome}>
-                {biome}
-              </option>
-            ))}
-          </select>
-        </div>
+      {showPlantsList ? ( <PlantTable/>
+      ) : (
+        <div className="dark-theme">
+          <div className="form-container">
+            <div className="input-group">
+              <label htmlFor="bioma">Bioma</label>
+              <select
+                id="bioma"
+                onChange={(e) => setBioma(e.target.value)}
+                value={bioma}
+              >
+                <option value="">Selecciona un bioma</option>
+                {statesConfig.biomes.map((biome) => (<option key={biome} value={biome}>
+                    {biome}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <div className="input-group">
-          <label htmlFor="clima">Clima</label>
-          <select
-            id="clima"
-            onChange={(e) => setClima(e.target.value)}
-            value={clima}
-          >
-            <option value="">Selecciona un clima</option>
-            {statesConfig.climates.map((climate) => (
-              <option key={climate} value={climate}>
-                {climate}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div className="input-group">
+              <label htmlFor="clima">Clima</label>
+              <select
+                id="clima"
+                onChange={(e) => setClima(e.target.value)}
+                value={clima}
+              >
+                <option value="">Selecciona un clima</option>
+                {statesConfig.climates.map((climate) => (
+                  <option key={climate} value={climate}>
+                    {climate}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <div className="input-group">
-          <label htmlFor="temperatura">Temperatura</label>
-          <select
-            id="temperatura"
-            onChange={(e) => setTemperatura(e.target.value)}
-            value={temperatura}
-          >
-            <option value="">Selecciona una temperatura</option>
-            {statesConfig.temperatures.map((temp) => (
-              <option key={temp} value={temp}>
-                {temp}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div className="input-group">
+              <label htmlFor="temperatura">Temperatura</label>
+              <select
+                id="temperatura"
+                onChange={(e) => setTemperatura(e.target.value)}
+                value={temperatura}
+              >
+                <option value="">Selecciona una temperatura</option>
+                {statesConfig.temperatures.map((temp) => (
+                  <option key={temp} value={temp}>
+                    {temp}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-          <div className="input-group">
-            <label htmlFor="light">Luz</label>
-            <select
-              id="light"
-              onChange={(e) => setLight(e.target.value)}
-              value={light}
-            >
-              <option value="">Selecciona una cantidad de luz</option>
-              {statesConfig.lights.map((l) => (
-                <option key={l} value={l}>
-                  {l}
-                </option>
-              ))}
-            </select>
+            <div className="input-group">
+              <label htmlFor="light">Luz</label>
+              <select
+                id="light"
+                onChange={(e) => setLight(e.target.value)}
+                value={light}
+              >
+                <option value="">Selecciona una cantidad de luz</option>
+                {statesConfig.lights.map((l) => (
+                  <option key={l} value={l}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="input-group">
+              <label htmlFor="momentOfDay">Momento del día</label>
+              <select
+                id="momentOfDay"
+                onChange={(e) => setMomentOfDay(e.target.value)}
+                value={momentOfDay}
+              >
+                <option value="">Selecciona un momento del día</option>
+                {statesConfig.momentOfDays.map((moment) => (
+                  <option key={moment} value={moment}>
+                    {moment}
+                  </option>
+                ))}
+              </select>
           </div>
 
           <div className="input-group">
-            <label htmlFor="momentOfDay">Momento del día</label>
-            <select
-              id="momentOfDay"
-              onChange={(e) => setMomentOfDay(e.target.value)}
-              value={momentOfDay}
-            >
-              <option value="">Selecciona un momento del día</option>
-              {statesConfig.momentOfDays.map((moment) => (
-                <option key={moment} value={moment}>
-                  {moment}
-                </option>
-              ))}
-            </select>
+            <label htmlFor="cantidad">Cantidad</label>
+            <input
+              id="cantidad"
+              type="number"
+                min="1"
+                value={cantidad}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  if (value === "") {
+                    setCantidad("");
+                  } else {
+                    setCantidad(Math.max(1, Number(value)));
+                  }
+                }}
+              />
           </div>
 
-        <div className="input-group">
-          <label htmlFor="cantidad">Cantidad</label>
-          <input
-            id="cantidad"
-            type="number"
-            min="1"
-            value={cantidad}
-            onChange={(e) => {
-              const value = e.target.value;
-              if (value === "") {
-                setCantidad("");
-              } else {
-                setCantidad(Math.max(1, Number(value)));
-              }
-            }}
-          />
-        </div>
+          <button className="search-button" onClick={handleFindPlants}>
+            Buscar Plantas
+          </button>
+          </div>
 
-        <button className="search-button" onClick={handleFindPlants}>
-          Buscar Plantas
-        </button>
+          <div className="plant-list">
+            <table className="plant-table">
+              <thead>
+                <tr>
+                  <th>Cantidad</th>
+                  <th>Nombre</th>
+                  <th>Rareza</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.values(groupedPlants).map(({ plant, quantity }, index) => (
+                  <tr key={`${plant.name}-${index}`}>
+                    <td>{quantity}</td>
+                    <td>{plant.name}</td>
+                    <td>{plant.rarity}</td>
+                    <td>{plant.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>)}
       </div>
-
-      <div className="plant-list">
-        <table className="plant-table">
-          <thead>
-            <tr>
-              <th>Cantidad</th>
-              <th>Nombre</th>
-              <th>Rareza</th>
-              <th>Descripción</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Object.values(groupedPlants).map(({ plant, quantity }, index) => (
-              <tr key={`${plant.name}-${index}`}>
-                <td>{quantity}</td>
-                <td>{plant.name}</td>
-                <td>{plant.rarity}</td>
-                <td>{plant.description}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
   );
 }
 
