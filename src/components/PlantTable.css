@@ -1,30 +1,68 @@
-/* Table styles */
+.plant-table-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Cardo", serif;
+}
+
+.search-container {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-bar {
+  padding: 12px 15px;
+  border: 2px solid #96743b;
+  border-radius: 6px;
+  background-color: #f5e6c9;
+  font-size: 1rem;
+  font-family: "Cardo", serif;
+  color: #433228;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #a77d4e;
+  background-color: #f0dcc0;
+}
+
+.plant-list {
+  overflow-x: auto;
+  min-height: 80vh;
+}
+
 .plant-table {
   width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  border: 2px solid #96743b;
-  background-color: #f5e6c9;
-  font-family: "Cardo", serif;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  max-height: 400px;
-  overflow-y: auto;
+  border: 0px;
+  background-color: #333333; /* Fondo negro para la tabla */
 }
-.plant-list{
-  width: 100%;
-  .plant-table th,
+
+.plant-table th,
 .plant-table td {
   padding: 12px 15px;
   text-align: left;
   color: #433228;
-  border: 1px solid #96743b;
-  transition: background-color 0.3s ease;
 }
 
 .plant-table th {
   background-color: #e4d5b7;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.plant-table tbody tr {
+  background-color: #f5e6c9;
+  transition: all 0.3s ease;
 }
 
 .plant-table tbody tr:nth-child(even) {
@@ -33,21 +71,69 @@
 
 .plant-table tbody tr:hover {
   background-color: #e4d5b7;
-}
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  .plant-table-container {
+    padding: 10px;
+  }
 
-@media (max-width: 520px) {
-  .plant-list{
-    .plant-table {
-      font-size: 0.75rem!important; /* Achica la fuente */
-    }
-  
-    .plant-table th, .plant-table td {
-      padding: 0.3rem!important; /* Reduce más el padding */
-      text-align: center!important;    
-      font-size: 0.75rem!important; 
-    }
-    
+  .search-bar {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .plant-table {
+    border-spacing: 0 15px; /* Aumenta el espacio entre "tarjetas" en móvil */
+  }
+
+  .plant-table thead {
+    display: none;
+  }
+
+  .plant-table,
+  .plant-table tbody,
+  .plant-table tr,
+  .plant-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .plant-table tr {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .plant-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #96743b;
+  }
+
+  .plant-table td:before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #96743b;
+  }
+
+  .plant-table td:last-child {
+    border-bottom: none;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .plant-table td {
+    font-size: 0.9rem;
+  }
+
+  .plant-table td:before {
+    font-size: 0.85rem;
+  }
+}
+
