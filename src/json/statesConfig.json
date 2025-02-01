@@ -3,5 +3,5 @@
     "climates": ["Humid", "SemiHumid", "Neutral", "SemiArid", "Arid"],
     "temperatures": ["Cold", "Cool", "Temperate", "Warm", "Hot"],
     "lights": ["High", "Medium", "Low"],
-    "momentOfDays": ["Day","Morning","Evening", "Night"]
+    "momentOfDays": ["All", "Day","Morning","Evening", "Night"]
 }

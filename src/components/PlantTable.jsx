@@ -9,8 +9,21 @@ function PlantTable() {
     a.name.localeCompare(b.name)
   );
 
-  const filteredPlants = sortedPlants.filter((plant) =>
-    plant.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredPlants = sortedPlants.filter((plant) => {
+    const lowerCaseSearchTerm = searchTerm.toLowerCase();
+    const name = plant.name.toLowerCase();
+    const description = plant.description ? plant.description.toLowerCase() : '';
+
+    const nameWords = name.split(/\s+/);
+    const descriptionWords = description.split(/\s+/);
+
+    const nameMatch = nameWords.some(word => word.startsWith(lowerCaseSearchTerm));
+    const descriptionMatch = descriptionWords.some(word => word.startsWith(lowerCaseSearchTerm));
+    
+    
+    return nameMatch || descriptionMatch;
+  }
+    
   );
 
   const handleSearchChange = (event) => {

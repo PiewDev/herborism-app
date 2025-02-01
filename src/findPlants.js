@@ -43,11 +43,16 @@ function calculatePlantWeight(plant, conditions, states, weights) {
         states.lights
     ) * weights.lightWeight;
 
-    const momentOfDayScore = getProximityScore(
-        conditions.momentOfDay,
-        plant.momentOfDay,
-        states.momentOfDays
-    ) * weights.momentOfDayWeight;
+    let momentOfDayScore;
+    if (plant.momentOfDay === "All") {
+      momentOfDayScore = 1; // If plant's momentOfDay is "All", set score to 1
+    } else { 
+        momentOfDayScore = getProximityScore(
+            conditions.momentOfDay,
+            plant.momentOfDay,
+            states.momentOfDays // Use getProximityScore for other cases
+        );
+    }
 
     // Obtener peso de rareza
     const rarityWeight = weights.rarityWeights[plant.rarity] || 1;
@@ -60,13 +65,16 @@ function getWeightedPlants(conditions, number, allowDuplicates = true) {
       // Paso 1: Filtrar plantas que NO tengan las condiciones actuales en su lista except
       const validPlants = plantsData.filter(plant => {
         return !plant.except.some(excludedCondition => 
-            excludedCondition === conditions.baseTerrain ||
-            excludedCondition === conditions.climate ||
-            excludedCondition === conditions.temperature ||
-            excludedCondition === conditions.light ||
-            excludedCondition === conditions.momentOfDay
+          excludedCondition === conditions.baseTerrain ||
+          excludedCondition === conditions.climate ||
+          excludedCondition === conditions.temperature ||
+          excludedCondition === conditions.light ||
+          (conditions.momentOfDay !== "All" && excludedCondition === conditions.momentOfDay)
         );
     });
+
+    
+
 
     if (validPlants.length === 0) return [];
 

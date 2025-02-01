@@ -8,7 +8,7 @@
     "rarity": "Common",
     "except": ["Dry", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Canela",
@@ -19,7 +19,7 @@
     "rarity": "Uncommon",
     "except": ["Cold", "Dry", "Rocky", "Cool"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Hierba de San Juan",
@@ -30,7 +30,7 @@
     "rarity": "Common",
     "except": ["Arid", "Dry", "Hot", "Muddy", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Lavanda",
@@ -41,7 +41,7 @@
     "rarity": "Common",
     "except": ["Cold", "Humid", "Muddy"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Caléndula",
@@ -52,7 +52,7 @@
     "rarity": "Common",
     "except": ["Hot", "Dry", "Arid", "Muddy", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Raíz de Estrella de Mar",
@@ -85,7 +85,7 @@
     "rarity": "Uncommon",
     "except": ["Hot", "Dry", "Arid", "Muddy"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Manzanilla",
@@ -96,7 +96,7 @@
     "rarity": "Common",
     "except": ["Hot", "Dry", "Arid", "Rocky", "Muddy"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Romero",
@@ -107,7 +107,7 @@
     "rarity": "Common",
     "except": ["Cold", "Humid", "Muddy", "Cool"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Hojas de Escarcha",
@@ -140,7 +140,7 @@
     "rarity": "Common",
     "except": ["Cold", "Humid", "Muddy", "Cool"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Coco",
@@ -151,7 +151,7 @@
     "rarity": "Common",
     "except": ["Cold", "Rocky", "Arid", "Dry", "Cool"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Papaya",
@@ -162,7 +162,7 @@
     "rarity": "Common",
     "except": ["Cold", "Rocky", "Arid", "Dry", "Cool"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Raíz de Marfil",
@@ -195,7 +195,7 @@
     "rarity": "Uncommon",
     "except": ["Cold", "Rocky", "Arid", "Dry", "Cool"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Ylang-Ylang",
@@ -206,7 +206,7 @@
     "rarity": "Uncommon",
     "except": ["Cold", "Rocky", "Arid", "Dry", "Cool"],
     "light": "High",
-    "momentOfDay": "Evening"
+    "momentOfDay": "All"
   },
   {
     "name": "Tamarindo",
@@ -217,7 +217,7 @@
     "rarity": "Uncommon",
     "except": ["Cold", "Rocky", "Arid", "Dry", "Cool"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Raíz de Coral",
@@ -250,7 +250,7 @@
     "rarity": "Rare",
     "except": ["Hot", "Dry", "Arid"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Lágrimas de Cosechador",
@@ -261,7 +261,7 @@
     "rarity": "Rare",
     "except": ["Hot", "Dry", "Arid"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Ajenjo",
@@ -272,7 +272,7 @@
     "rarity": "Uncommon",
     "except": ["Hot", "Dry", "Arid", "Rocky", "Muddy"],
     "light": "High",
-    "momentOfDay": "Evening"
+    "momentOfDay": "All"
   },
   {
     "name": "Datura",
@@ -316,7 +316,7 @@
     "rarity": "Rare",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "Low",
-    "momentOfDay": "Evening"
+    "momentOfDay": "All"
   },
   {
     "name": "Menta",
@@ -327,7 +327,7 @@
     "rarity": "Common",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Ginseng",
@@ -338,7 +338,7 @@
     "rarity": "Uncommon",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "High",
-    "momentOfDay": "Evening"
+    "momentOfDay": "All"
   },
   {
     "name": "Ortiga",
@@ -349,7 +349,7 @@
     "rarity": "Common",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Té",
@@ -360,7 +360,7 @@
     "rarity": "Common",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "High",
-    "momentOfDay": "Evening"
+    "momentOfDay": "All"
   },
   {
     "name": "Hinojo",
@@ -371,7 +371,7 @@
     "rarity": "Common",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Valeriana",
@@ -393,7 +393,7 @@
     "rarity": "Common",
     "except": ["Cold", "Rocky", "Arid", "Dry", "Cool"],
     "light": "High",
-    "momentOfDay": "Evening"
+    "momentOfDay": "All"
   },
   {
     "name": "Consuelda",
@@ -404,7 +404,7 @@
     "rarity": "Uncommon",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Milenrama",
@@ -415,7 +415,7 @@
     "rarity": "Common",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "High",
-    "momentOfDay": "Day"
+    "momentOfDay": "All"
   },
   {
     "name": "Lirio de la Araña Azul",
@@ -424,7 +424,7 @@
     "climate": "Humid",
     "temperature": "Cool",
     "rarity": "VeryRare",
-    "except": ["Hot", "Dry", "Arid", "Full", "High", "Rocky", "Muddy", "Dry"],
+    "except": ["Hot", "Dry", "Arid", "High", "Rocky", "Muddy"],
     "light": "Low",
     "momentOfDay": "Night"
   },
@@ -471,5 +471,16 @@
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "Low",
     "momentOfDay": "Evening"
+  },
+  {
+    "name": "Rhodiola Rosea",
+    "description": "Planta perenne de alta montaña con flores amarillas o rosadas. Se utiliza en tónicos restauradores para combatir la fatiga, aumentar la resistencia y mejorar la claridad mental.",
+    "baseTerrain": "Rocky",
+    "climate": "Cold",
+    "temperature": "Cool",
+    "rarity": "Uncommon",
+    "except": ["Hot","Warm", "Humid", "Muddy","Rich", "Fertile"],
+    "light": "Medium",
+    "momentOfDay": "All"
   }
 ]
