@@ -194,9 +194,8 @@
   }
 
   .ingredientes-container{    
-     overflow: hidden;
-     
-    max-height: 20vh;
+     overflow: hidden;     
+    max-height: 23vh;
   }
   .ingredient-list {
     overflow-y: auto; 
@@ -204,6 +203,14 @@
   .ingredient-row{
     overflow: hidden;
   }
+  .ingredients-container h4{
+    margin-top: 10px!important;
+    font-size: 0.9rem;
+  }
+  .ingredient-list{    
+    grid-template-columns:repeat(1, 1fr);
+  }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -222,6 +229,7 @@
     display: flex;  
     justify-content: center;
   }
+  
 }
 
 @media (min-width: 1025px) {
@@ -237,8 +245,9 @@
   }
   .ingredientes-container{ 
     overflow: hidden;
- }
+  }
   
+
 }
 
 
