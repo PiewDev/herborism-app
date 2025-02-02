@@ -172,7 +172,7 @@
     justify-content: center;
   }
   .potion-list-container {
-    grid-template-columns: 70%;
+    grid-template-columns: 95%;
     justify-content: center;
   }
 
@@ -200,6 +200,9 @@
   }
   .ingredient-list {
     overflow-y: auto; 
+  }
+  .ingredient-row{
+    overflow: hidden;
   }
 }
 
@@ -232,7 +235,7 @@
     justify-content: center;    
     grid-template-columns: repeat(auto-fill,420px);
   }
-  .ingredientes-container{    
+  .ingredientes-container{ 
     overflow: hidden;
  }
   
