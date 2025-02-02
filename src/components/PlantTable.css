@@ -25,6 +25,25 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 }
+.select-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-container select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 12px 15px;
+  border: 2px solid #96743b;
+  border-radius: 6px;
+  background-color: #f5e6c9;
+  font-size: 1rem;
+  font-family: "Cardo", serif;
+  color: #433228;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
 
 .search-bar:focus {
   outline: none;
@@ -60,6 +79,13 @@
   z-index: 10;
 }
 
+.plant-table th{
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100px;
+}
+
+
 .plant-table tbody tr {
   background-color: #f5e6c9;
   transition: all 0.3s ease;
@@ -72,6 +98,12 @@
 .plant-table tbody tr:hover {
   background-color: #e4d5b7;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+@media screen and (min-width: 769px) {
+  .select-container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -110,17 +142,27 @@
   .plant-table td {
     padding: 10px 15px;
     text-align: left;
-    border-bottom: 1px solid #96743b;
+    border-bottom: 1px solid #96743b; /* Añade un borde inferior */
   }
 
-  .plant-table td:before {
+  .plant-table td:not(.short-data):before {
     content: attr(data-label);
     display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    color: #96743b;
+    font-weight: bold; /* Hace el texto más visible */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    margin-bottom: 5px; /* Añade espacio debajo del texto */
+    color: #96743b; /* Otorga color al texto */
+    
   }
+  .plant-table td.short-data::before {  
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 5px;
+
+    content: attr(data-label);
+    content: attr(data-label) ':';
+  }
+
 
   .plant-table td:last-child {
     border-bottom: none;
@@ -135,5 +177,9 @@
   .plant-table td:before {
     font-size: 0.85rem;
   }
-}
+  .plant-table td {
+    word-break: break-word; /* Asegura el ajuste del texto */
 
+  }
+
+}

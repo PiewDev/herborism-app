@@ -2,6 +2,8 @@
 .container {
   padding-top: 9rem;
   padding-inline: 1rem;
+  min-height: 100vh; /* Asegura que el contenedor ocupe al menos toda la altura de la ventana */
+  
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -9,6 +11,7 @@
   gap: 2rem;
   align-items: center; /* Center the content */
   background-color: #333;
+  transition: background-color 0.3s ease;
 }
 
 .plant-list {
@@ -132,7 +135,7 @@
   }
   .dark-theme{
     width: 100%;
-  }
+  }  
   .container {
     padding-top: 6rem; /* Ajustar padding para que no se corte */
     padding-inline: 0.5rem;
@@ -161,7 +164,7 @@
   .navbar {
     align-items: center;
     text-align: center;
-    padding: 0.2rem;
+    padding: 0.2rem 0.5rem;
     width: 100%;
   }
 
@@ -198,39 +201,57 @@
 
 /* Navbar styles */
 .navbar {
-  background-color: #202020;
-  color: #d0b065;
-  width: 100vw; /* Full width */
+  background-color: rgba(32, 32, 32, 0.9); /* Slightly transparent dark background */
+  color: #d0b065; /* Golden text color */
+  width: 100%; /* Full width */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
+  padding: 0.75rem 2rem; /* Increased padding for breathing room */
   font-family: "Old Standard TT", serif;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem; /* Slightly larger font size */
+  font-weight: bold; /* Bold font weight */
   position: fixed; /* Fixed to top */
   top: 0; /* Align to top */
   left: 0; /* Align to left */
-  z-index: 100; /* Above other content */
+  z-index: 100; /* Ensure it stays on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar-brand {
-  font-size: 1rem;
+  font-size: 1.3rem; /* Larger brand name */
+  font-weight: 700; /* Extra bold */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #c0a055; /* Lighter golden color on hover */
 }
 
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px; /* Increased gap between links */
 }
 
 .navbar a,
 .dark-theme label {
-  color: #d0b065;
-  text-decoration: none; /* Remove underline */
-  display: block;
-  margin-bottom: 0.25rem;
+  color: #d0b065; /* Golden link color */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.5rem 1rem;
 }
+
+.navbar a:hover {
+  color: #c0a055; /* Lighter golden color on hover */
+  transform: translateY(-2px);
+}
+
+.dark-theme .navbar {
+  background-color: rgba(44, 44, 44, 0.9); /* Darker transparent background */
+}
+
 
 .navbar button {
   background-color: #6b533b;
@@ -246,6 +267,12 @@
 }
 
 .navbar button:hover {
-  background-color: #45a049;
+  background-color: #4f3e2c;
+  transform: translateY(-2px);
 }
 
+.dark-theme .navbar button {
+  background-color: #796545;
+}
+
+.dark-theme .navbar button:hover {background-color: #645539;}
