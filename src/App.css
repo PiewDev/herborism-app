@@ -26,7 +26,6 @@
     font-family: "Old Standard TT", serif;
     font-size: 1.1rem; /* Slightly larger font size */
     font-weight: bold; /* Bold font weight */
-    position: fixed; /* Fixed to top */
     top: 0; /* Align to top */
     left: 0; /* Align to left */
     z-index: 100; /* Ensure it stays on top */
