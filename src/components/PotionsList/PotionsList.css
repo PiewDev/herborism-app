@@ -1,20 +1,22 @@
-.container {
+.potion-container {
+  flex-direction: column;
   display: flex;
-  justify-content: center;
-  padding: 20px;
-  background-color: #f0e6d2;
-  min-height: 100vh;
+  align-items: center; /* Center the content */
+  background-color: #333;
+.search-bar{
+  margin:30px;
+  width: 80%;
 }
-
 .potion-list-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 25px;
-  width: 100%;
-  max-width: 1600px;
+  max-width: 1450px;
+  justify-items: stretch;
 }
 
 .potion-card {
+  width: 100%; /* Se asegura que ocupe todo el ancho asignado por la celda */
   display: flex;
   flex-direction: column;
   background-color: #f5e6c9;
@@ -24,7 +26,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-family: "Roboto", sans-serif;
   color: #433228;
-  height: 650px; /* Fixed height */
+  height: 500px; /* Fixed height */
+  box-sizing: border-box; /* Para incluir padding en el ancho total */
 }
 
 .potion-card:hover {
@@ -34,12 +37,12 @@
 
 .potion-name {
   color: #96743b;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+  margin: 0px;
+  font-size: 1.1rem;
   text-align: center;
   border-bottom: 2px solid #e9dac6;
   padding-bottom: 10px;
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,54 +57,67 @@
 .extra-info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  margin-left: 15px;
-  margin-right: 10px;
+  justify-content: space-around;
+  margin-bottom: 0px;
+  margin-top: 7px;
   height: 70px;
 }
 
-.extra-info p {
-  margin: 5px 0;
-  margin-right: 5px;
-  font-size: 1rem;
+.key-value-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
 }
 
+.extra-info p {
+  margin:0px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
+.extra-info strong{
+  margin:0px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
 .extra-info.landscape {
   flex-direction: row;
 }
 
 .effect-container {
-  height: 180px;
+  height: 100px;
   overflow-y: auto;
-  margin-bottom: 10px;
-  padding-right: 10px;
 }
 
 .effect {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   margin:0px
 }
 
-.ingredientes-container {
+.ingredients-container {  
+  margin-bottom: 10px;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
 }
 
-.ingredientes-container h4 {
+.ingredients-container h4 {
   color: #96743b;
   margin-bottom: 15px;
-  margin-top: 0px;
+  margin-top: 0px!important;
   font-size: 1.2rem;
 }
 
 .ingredient-list {
-  max-height: 150px; /* Ajusta este valor según lo que necesites */
+  max-height: 200px; /* Ajusta este valor según lo que necesites */
   overflow-y: auto;  /* Esto mostrará la barra de scroll cuando el contenido sea mayor que el alto definido */
-  padding-right: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  gap: 5px;
+  column-gap: 20px;
   box-sizing: border-box; /* Para que el padding se incluya en el ancho/alto */
 }
 
@@ -112,7 +128,6 @@
   padding: 8px 12px;
   border-radius: 6px;
   transition: background-color 0.3s ease;
-  margin-bottom: 8px;
   font-size: 0.95rem;
 }
 
@@ -152,8 +167,13 @@
 }
 
 @media (max-width: 768px) {
+  .container{    
+    display: flex;  
+    justify-content: center;
+  }
   .potion-list-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 70%;
+    justify-content: center;
   }
 
   .extra-info {
@@ -189,17 +209,34 @@
     overflow: hidden;
  }
   .potion-list-container {
+    
+    grid-template-columns: 70%;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .container{    
+    display: flex;  
+    justify-content: center;
   }
 }
 
 @media (min-width: 1025px) {
   
+  .container{    
+    display: flex;  
+    justify-content: center;
+  }
+  .potion-list-container {
+    grid-template-columns: 70%;
+    justify-content: center;    
+    grid-template-columns: repeat(auto-fill,420px);
+  }
   .ingredientes-container{    
     overflow: hidden;
  }
-  .potion-list-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  
 }
 
+
+}

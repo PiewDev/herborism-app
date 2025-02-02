@@ -1,108 +1,139 @@
+.App{
+  top:0;
+  right: 0;
+  left:0;
+}
+/* Base styles */
 .navbar {
-  align-items: center;
-  text-align: center;
-  padding: 0.2rem 0.5rem;
+  background-color: rgba(32, 32, 32, 0.9);
+  color: #d0b065;
   width: 100%;
-} 
-.navbar-links {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  padding: 0.75rem;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.navbar a {
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-brand:hover {
+  color: #c0a055;
+}
+
+.navbar-links {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.navbar a,
+.dark-theme label {
+  color: #d0b065;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.5rem;
   width: 100%;
   text-align: center;
 }
-  /* Navbar styles */
+
+.navbar a:hover {
+  color: #c0a055;
+  transform: translateY(-2px);
+}
+
+.navbar button {
+  background-color: #6b533b;
+  border: none;
+  color: #d0b065;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  font-family: "Old Standard TT", serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.navbar button:hover {
+  background-color: #4f3e2c;
+  transform: translateY(-2px);
+}
+
+/* Hamburger menu styles */
+.navbar-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #d0b065;
+  cursor: pointer;
+  padding: 0.5rem;
+  align-self: flex-end;
+}
+
+/* Dark theme styles */
+.dark-theme .navbar {
+  background-color: rgba(44, 44, 44, 0.9);
+}
+
+.dark-theme .navbar button {
+  background-color: #796545;
+}
+
+.dark-theme .navbar button:hover {
+  background-color: #645539;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
   .navbar {
-    background-color: rgba(32, 32, 32, 0.9); /* Slightly transparent dark background */
-    color: #d0b065; /* Golden text color */
-    width: 100%; /* Full width */
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 2rem; /* Increased padding for breathing room */
-    font-family: "Old Standard TT", serif;
-    font-size: 1.1rem; /* Slightly larger font size */
-    font-weight: bold; /* Bold font weight */
-    top: 0; /* Align to top */
-    left: 0; /* Align to left */
-    z-index: 100; /* Ensure it stays on top */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    list-style: none;
+    padding: 0.75rem 2rem;
   }
-  
+
   .navbar-brand {
-    font-size: 1.3rem; /* Larger brand name */
-    font-weight: 700; /* Extra bold */
-    transition: color 0.3s ease;
-    list-style: none;
+    margin-bottom: 0;
   }
-  .navbar-brand::before, .navbar-brand > *::before {
-    content: none !important;
-  }
-  .navbar-brand::before {
-    content: none !important;
-  }
-  
-  .navbar-brand:hover {
-    color: #c0a055; /* Lighter golden color on hover */
-  }
-  
+
   .navbar-links {
     display: flex;
-    align-items: center;
-    gap: 20px; /* Increased gap between links */
+    flex-direction: row;
+    width: auto;
   }
-  
+
+  .navbar-toggle {
+    display: none;
+  }
+
   .navbar a,
   .dark-theme label {
-    color: #d0b065; /* Golden link color */
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.2s ease;
-    padding: 0.5rem 1rem;
+    width: auto;
   }
-  
-  .navbar a:hover {
-    color: #c0a055; /* Lighter golden color on hover */
-    transform: translateY(-2px);
-  }
-  
-  .dark-theme .navbar {
-    background-color: rgba(44, 44, 44, 0.9); /* Darker transparent background */
-  }
-  
-  
+
   .navbar button {
-    background-color: #6b533b;
-    border: none; /* Remove border */
-    color: #d0b065;
-    padding: 8px 16px; /* Padding */
-    font-size: 0.8rem; /* Font size */
-    cursor: pointer; /* Pointer cursor */
-    border-radius: 8px; /* Rounded corners */
-    width: 100%; /* Full width on mobile */
-    font-family: "Old Standard TT", serif;
-    transition: background-color 0.3s ease, transform 0.2s ease,
+    width: auto;
+    margin-top: 0;
   }
-  
-  .navbar button:hover {
-    background-color: #4f3e2c;
-    transform: translateY(-2px);
-  }
-  
-  .dark-theme .navbar button {
-    background-color: #796545;
-  }
-  
-  .dark-theme .navbar button:hover {background-color: #645539;}
-  
-  @media (max-width: 768px) {
-    .navbar-links {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-  
+}
+
