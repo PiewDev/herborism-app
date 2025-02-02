@@ -107,11 +107,9 @@ function SearchPlants() {
           />
         </div>
       </div>
-      <div className="plant-list">
         <button className="search-button" onClick={handleFindPlants}>
           Buscar Plantas
         </button>
-      </div>
       <div className="plant-list">
         <table className="plant-table">
           <thead>
