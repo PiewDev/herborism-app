@@ -1,0 +1,54 @@
+.potion-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .potion-card {
+    background-color: #f5e6c9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Roboto;
+    color: #433228;
+  }
+  
+  .potion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .potion-name {
+    color: #96743b;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .ingredient-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ingredient-row:hover{
+    background-color: #e9dac6;
+  }
+
+
+  
+  .potion-details p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .potion-details strong {
+    color: #96743b;
+    font-weight: 600;
+  }

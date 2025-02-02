@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import plantsData from '../json/plants.json';
+import plantsData from '../../json/plants.json';
 import './PlantTable.css';
 
 function PlantTable() {
