@@ -106,7 +106,8 @@ function PlantTable() {
           <thead>
             <tr>
               <th onClick={() => handleSort('name')}>Name{getSortArrow('name')}</th>
-              <th onClick={() => handleSort('description')}>Description{getSortArrow('description')}</th>
+              <th onClick={() => handleSort('description')}>Description{getSortArrow('description')}</th>              
+              <th onClick={() => handleSort('Uses')}>Uses{getSortArrow('Uses')}</th>
               <th className='short-header' onClick={() => handleSort('baseTerrain')}>Biome{getSortArrow('baseTerrain')}</th>
               <th className='short-header' onClick={() => handleSort('rarity')}>Rarity{getSortArrow('rarity')}</th>
               <th className='short-header' onClick={() => handleSort('light')}>Light{getSortArrow('light')}</th>
@@ -115,8 +116,9 @@ function PlantTable() {
           <tbody>
             {filteredPlants.map((plant) => (
               <tr key={plant.name}>
-                <td data-label="Name" >{plant.name}</td>
+                <td data-label="Name">{plant.name}</td>
                 <td data-label="Description">{plant.description}</td>
+                <td data-label="Uses">{plant.Uses}</td>
                 <td className="short-data" data-label="Biome">{plant.baseTerrain}</td>
                 <td className="short-data" data-label="Rarity">{plant.rarity}</td>
                 <td className="short-data" data-label="Light">{plant.light}</td>

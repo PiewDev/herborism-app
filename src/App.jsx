@@ -56,12 +56,10 @@ useEffect(() => {
           <div className="navbar-brand">
               <a href="/">Buscador de Plantas</a>
           </div>
-          <ul className="navbar-menu">
-              <li className="navbar-item">
-                <button onClick={() => setShowPlantsList(!showPlantsList)}>{showPlantsList ? "Buscar Plantas" : "Ver Lista de Plantas"}</button>
-                  
-              </li>
-          </ul>
+          
+          <div className="navbar-brand">
+            <button onClick={() => setShowPlantsList(!showPlantsList)}>{showPlantsList ? "Buscar Plantas" : "Ver Lista de Plantas"}</button>
+          </div>
       </nav>
 
       {showPlantsList ? ( <PlantTable/>
