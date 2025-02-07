@@ -110,7 +110,7 @@ function SearchPlants() {
         <button className="search-button" onClick={handleFindPlants}>
           Buscar Plantas
         </button>
-      <div className="plant-list">
+      <div className={`plant-list ${selectedPlants.length > 0 ? 'show' : ''}`}>
         <table className="plant-table">
           <thead>
             <tr>
