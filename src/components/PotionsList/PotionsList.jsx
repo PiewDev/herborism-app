@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import potionsData from "../../json/potions.json";
 import "./PotionsList.css";
 
+function capitalizeFirstLetter(str) {
+  return str.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
 function PotionList() {
     function removeAccents(str) {
         return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -10,6 +14,7 @@ function PotionList() {
       function compareStringsWithoutAccents(str1, str2) {
         return removeAccents(str1.toLowerCase()).startsWith(removeAccents(str2.toLowerCase()))
       }
+
 
   const { potions } = potionsData;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -77,7 +82,13 @@ function PotionList() {
                 <div className="ingredients-container">
                   <h4>Ingredientes:</h4>
                   <div className="ingredient-list">
-                    {ingredients.map((ingredient, index) => <div key={index} className="ingredient-row"> <span className="ingredient-name">{ingredient}</span></div>)}
+                    {ingredients.map((ingredient, index) => (
+                      <div key={index} className="ingredient-row">
+                        <span className="ingredient-name">
+                          {ingredient.quantity + " " + capitalizeFirstLetter(ingredient.name)}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

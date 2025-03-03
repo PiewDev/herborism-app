@@ -1,163 +1,163 @@
 {
-  "pociones": [
+  "potions": [
     {
-      "nombre": "Infusión de Hierbas Curativas",
-      "ingredientes": [
-        { "nombre": "Caléndula", "cantidad": 1 },
-        { "nombre": "Melaleuca", "cantidad": 1 },
-        { "nombre": "Consuelda", "cantidad": 1 }
+      "name": "Infusión de Hierbas Curativas",
+      "ingredients": [
+        { "name": "Caléndula", "quantity": 1 },
+        { "name": "Melaleuca", "quantity": 1 },
+        { "name": "Consuelda", "quantity": 1 }
       ],
-      "efecto": "Restaura 2d4 + const puntos de golpe.",
-      "duración": "Única aplicación",
-      "nivel": "Básico",
-      "tipo": "Infusión"
+      "effect": "Restaura 2d4 + const puntos de golpe.",
+      "duration": "Única aplicación",
+      "level": "Básico",
+      "type": "Infusión"
     },
     {
-      "nombre": "Poción Revitalizante Matutina",
-      "ingredientes": [
-        { "nombre": "ginseng", "cantidad": 1 },
-        { "nombre": "té verde", "cantidad": 2 },
-        { "nombre": "jengibre", "cantidad": 1 }
+      "name": "Poción Revitalizante Matutina",
+      "ingredients": [
+        { "name": "ginseng", "quantity": 1 },
+        { "name": "té verde", "quantity": 2 },
+        { "name": "jengibre", "quantity": 1 }
       ],
-      "efecto": "Otorga ventaja en las tiradas de Constitución durante 4 horas.",
-      "duración": "4 horas",
-      "nivel": "Básico",
-      "tipo": "Poción"
+      "effect": "Otorga ventaja en las tiradas de Constitución durante 4 horas.",
+      "duration": "4 horas",
+      "level": "Básico",
+      "type": "Poción"
+    },
+   {
+      "name": "Tónico Digestivo",
+      "ingredients": [
+        { "name": "Manzanilla", "quantity": 1 },
+        { "name": "jengibre", "quantity": 2 },
+        { "name": "menta", "quantity": 1 },
+        { "name": "hinojo", "quantity": 2 }
+      ],
+      "effect": "Proporciona inmunidad a las enfermedades transmitidas por alimentos y venenos digestivos durante 1 hora. Si ya se está afectado, te cura a lo largo de 1 hora.",
+      "duration": "1 hora",
+      "level": "Básico",
+      "type": "Tónico"
     },
     {
-      "nombre": "Tónico Digestivo",
-      "ingredientes": [
-        { "nombre": "Manzanilla", "cantidad": 1 },
-        { "nombre": "jengibre", "cantidad": 2 },
-        { "nombre": "menta", "cantidad": 1 },
-        { "nombre": "hinojo", "cantidad": 2 }
+      "name": "Infusión Relajante para el Sueño",
+      "ingredients": [
+        { "name": "valeriana", "quantity": 2 },
+        { "name": "pasiflora", "quantity": 1 },
+        { "name": "melisa", "quantity": 1 }
       ],
-      "efecto": "Proporciona inmunidad a las enfermedades transmitidas por alimentos y venenos digestivos durante 1 hora. Si ya se está afectado, te cura a lo largo de 1 hora.",
-      "duración": "1 hora",
-      "nivel": "Básico",
-      "tipo": "Tónico"
+      "effect": "Permite al bebedor dormir profundamente sin ser interrumpido, da ventaja en tiradas de salvación para dormir correctamente en situaciones adversas y un bonificador +3.",
+      "duration": "8 horas",
+      "level": "Básico",
+      "type": "Infusión"
     },
     {
-      "nombre": "Infusión Relajante para el Sueño",
-      "ingredientes": [
-        { "nombre": "valeriana", "cantidad": 2 },
-        { "nombre": "pasiflora", "cantidad": 1 },
-        { "nombre": "melisa", "cantidad": 1 }
+      "name": "Té Revigorizante",
+      "ingredients": [
+        { "name": "té verde", "quantity": 1 },
+        { "name": "ginseng", "quantity": 2 },
+        { "name": "limón fresco", "quantity": 1 },
+        { "name": "hierba de San Juan", "quantity": 1 }
       ],
-      "efecto": "Permite al bebedor dormir profundamente sin ser interrumpido, da ventaja en tiradas de salvación para dormir correctamente en situaciones adversas y un bonificador +3.",
-      "duración": "8 horas",
-      "nivel": "Básico",
-      "tipo": "Infusión"
+      "effect": "Otorga ventaja en las tiradas de inteligencia y sabiduría durante 2 horas.",
+      "duration": "2 horas",
+      "level": "Básico",
+      "type": "Té"
     },
     {
-      "nombre": "Té Revigorizante",
-      "ingredientes": [
-        { "nombre": "té verde", "cantidad": 1 },
-        { "nombre": "ginseng", "cantidad": 2 },
-        { "nombre": "limón fresco", "cantidad": 1 },
-        { "nombre": "hierba de San Juan", "cantidad": 1 }
+      "name": "Ungüento Cicatrizante",
+      "ingredients": [
+        { "name": "consuelda", "quantity": 2 },
+        { "name": "milenrama", "quantity": 1 },
+        { "name": "caléndula", "quantity": 3 }
       ],
-      "efecto": "Otorga ventaja en las tiradas de inteligencia y sabiduría durante 2 horas.",
-      "duración": "2 horas",
-      "nivel": "Básico",
-      "tipo": "Té"
+      "effect": "Acelera el proceso de curación de heridas superficiales y permite al bebedor recuperar 2d6 punto de golpe adicional durante un descanso.",
+      "duration": "Única aplicación",
+      "level": "Básico",
+      "type": "Ungüento"
     },
     {
-      "nombre": "Ungüento Cicatrizante",
-      "ingredientes": [
-        { "nombre": "consuelda", "cantidad": 2 },
-        { "nombre": "milenrama", "cantidad": 1 },
-        { "nombre": "caléndula", "cantidad": 3 }
+      "name": "Pocion de susceptibilidad al engaño",
+      "ingredients": [
+        { "name": "valeriana", "quantity": 3 },
+        { "name": "romero", "quantity": 1 },
+        { "name": "susurros del crepusculo", "quantity": 2 },
+        { "name": "datura", "quantity": 2 },
+        { "name": "flor del susurro", "quantity": 1 }
       ],
-      "efecto": "Acelera el proceso de curación de heridas superficiales y permite al bebedor recuperar 2d6 punto de golpe adicional durante un descanso.",
-      "duración": "Única aplicación",
-      "nivel": "Básico",
-      "tipo": "Ungüento"
+      "effect": "La poción confiere al bebedor una desventaja en las salvaciones contra engaño durante una hora y aplica un penalizador de -5 a la salvación. Ignora las inmunidades y resistencias a ser engañado.",
+      "duration": "1h",
+      "level": "Intermedio",
+      "type": "Poción"
     },
     {
-      "nombre": "Pocion de susceptibilidad al engaño",
-      "ingredientes": [
-        { "nombre": "valeriana", "cantidad": 3 },
-        { "nombre": "romero", "cantidad": 1 },
-        { "nombre": "susurros del crepusculo", "cantidad": 2 },
-        { "nombre": "datura", "cantidad": 2 },
-        { "nombre": "flor del susurro", "cantidad": 1 }
+      "name": "Pocion de restauración mágica",
+      "ingredients": [
+        { "name": "raiz del sabio", "quantity": 1 },
+        { "name": "Ylang-Ylang", "quantity": 2 },
+        { "name": "Hierba de San Juan", "quantity": 4 }
       ],
-      "efecto": "La poción confiere al bebedor una desventaja en las salvaciones contra engaño durante una hora y aplica un penalizador de -5 a la salvación. Ignora las inmunidades y resistencias a ser engañado.",
-      "duración": "1h",
-      "nivel": "Intermedio",
-      "tipo": "Poción"
+      "effect": "La poción restaura parcialmente los espacios de conjuro del bebedor, permitiéndole recuperar un 1d6 de esos espacios con un descanso corto.",
+      "duration": "Única aplicación",
+      "level": "Intermedio",
+      "type": "Poción"
     },
     {
-      "nombre": "Pocion de restauración mágica",
-      "ingredientes": [
-        { "nombre": "raiz del sabio", "cantidad": 1 },
-        { "nombre": "Ylang-Ylang", "cantidad": 2 },
-        { "nombre": "Hierba de San Juan", "cantidad": 4 }
+      "name": "Infusión de resistencia al frio",
+      "ingredients": [
+        { "name": "Hojas de Escarcha", "quantity": 1 },
+        { "name": "Jengibre", "quantity": 1 },
+        { "name": "Canela", "quantity": 1 }
       ],
-      "efecto": "La poción restaura parcialmente los espacios de conjuro del bebedor, permitiéndole recuperar un 1d6 de esos espacios con un descanso corto.",
-      "duración": "Única aplicación",
-      "nivel": "Intermedio",
-      "tipo": "Poción"
+      "effect": "La infusión te hace que el clima frío no genere tiradas de salvación ni desventajas y te hace resistente al daño por frío durante 4 horas.",
+      "duration": "4 horas",
+      "level": "Intermedio",
+      "type": "Infusión"
     },
     {
-      "nombre": "Infusión de resistencia al frio",
-      "ingredientes": [
-        { "nombre": "Hojas de Escarcha", "cantidad": 1 },
-        { "nombre": "Jengibre", "cantidad": 1 },
-        { "nombre": "Canela", "cantidad": 1 }
+      "name": "Infusión de Sueños Lúcidos",
+      "ingredients": [
+        { "name": "ylang-ylang", "quantity": 1 },
+        { "name": "susurros del crepusculo", "quantity": 1 },
+        { "name": "corazón de las sombras", "quantity": 1 }
       ],
-      "efecto": "La infusión te hace que el clima frío no genere tiradas de salvación ni desventajas y te hace resistente al daño por frío durante 4 horas.",
-      "duración": "4 horas",
-      "nivel": "Intermedio",
-      "tipo": "Infusión"
+      "effect": "Permite estar en un estado de alerta mientras se duerme sin que esto afecte al descanso.",
+      "duration": "8 horas",
+      "level": "Intermedio",
+      "type": "Infusión"
     },
     {
-      "nombre": "Infusión de Sueños Lúcidos",
-      "ingredientes": [
-        { "nombre": "ylang-ylang", "cantidad": 1 },
-        { "nombre": "susurros del crepusculo", "cantidad": 1 },
-        { "nombre": "corazón de las sombras", "cantidad": 1 }
+      "name": "Elixir de Regeneración",
+      "ingredients": [
+        { "name": "lirio de la araña azul", "quantity": 1 },
+        { "name": "espino sangrientos", "quantity": 1 }
       ],
-      "efecto": "Permite estar en un estado de alerta mientras se duerme sin que esto afecte al descanso.",
-      "duración": "8 horas",
-      "nivel": "Intermedio",
-      "tipo": "Infusión"
+      "effect": "Restaura 2d8 puntos de golpe y cura enfermedades menores.",
+      "duration": "Única aplicación",
+      "level": "Intermedio",
+      "type": "Elixir"
     },
     {
-      "nombre": "Elixir de Regeneración",
-      "ingredientes": [
-        { "nombre": "lirio de la araña azul", "cantidad": 1 },
-        { "nombre": "espino sangrientos", "cantidad": 1 }
+      "name": "Poción de Ocultamiento Nocturno",
+      "ingredients": [
+        { "name": "hojas de la noche eterna", "quantity": 1 },
+        { "name": "susurros del crepúsculo", "quantity": 2 },
+        { "name": "flor del susurro", "quantity": 1 }
       ],
-      "efecto": "Restaura 2d8 puntos de golpe y cura enfermedades menores.",
-      "duración": "Única aplicación",
-      "nivel": "Intermedio",
-      "tipo": "Elixir"
+      "effect": "Otorga invisibilidad en áreas de penumbra o oscuridad por 4 horas.",
+      "duration": "4 horas",
+      "level": "Intermedio",
+      "type": "Poción"
     },
     {
-      "nombre": "Poción de Ocultamiento Nocturno",
-      "ingredientes": [
-        { "nombre": "hojas de la noche eterna", "cantidad": 1 },
-        { "nombre": "susurros del crepúsculo", "cantidad": 2 },
-        { "nombre": "flor del susurro", "cantidad": 1 }
+      "name": "Tónico de la Mente Aguerrida",
+      "ingredients": [
+        { "name": "raíz del sabio", "quantity": 1 },
+        { "name": "lágrimas de cosechador", "quantity": 2 },
+        { "name": "ajenjo", "quantity": 1 }
       ],
-      "efecto": "Otorga invisibilidad en áreas de penumbra o oscuridad por 4 horas.",
-      "duración": "4 horas",
-      "nivel": "Intermedio",
-      "tipo": "Poción"
-    },
-    {
-      "nombre": "Tónico de la Mente Aguerrida",
-      "ingredientes": [
-        { "nombre": "raíz del sabio", "cantidad": 1 },
-        { "nombre": "lágrimas de cosechador", "cantidad": 2 },
-        { "nombre": "ajenjo", "cantidad": 1 }
-      ],
-      "efecto": "Otorga ventaja en las tiradas de Sabiduría e Inteligencia durante 4 horas.",
-      "duración": "4 horas",
-      "nivel": "Intermedio",
-      "tipo": "Tónico"
+      "effect": "Otorga ventaja en las tiradas de Sabiduría e Inteligencia durante 4 horas.",
+      "duration": "4 horas",
+      "level": "Intermedio",
+      "type": "Tónico"
     }
   ]
 }
