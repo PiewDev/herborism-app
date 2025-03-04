@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import statesConfig from '../../json/statesConfig.json';
-import findPlants from '../../findPlants.js';
+import { downloadPDF, getWeightedPlants } from '../../findPlants.js';
 import './SearchPlants.css';
 
 function SearchPlants() {
@@ -12,12 +12,19 @@ function SearchPlants() {
   const [cantidad, setCantidad] = useState(1);
   const [selectedPlants, setSelectedPlants] = useState([]);
 
-  const groupedPlants = selectedPlants.reduce((acc, plant) => {
-    const key = plant.name;
-    acc[key] = acc[key] || { plant, quantity: 0 };
-    acc[key].quantity += 1;
-    return acc;
-  }, {});
+  const groupedPlants = Object.values(
+    selectedPlants.reduce((acc, plant) => {
+      const existingPlant = acc[plant.name];
+  
+      if (existingPlant) {
+        existingPlant.quantity += 1;
+      } else {
+        acc[plant.name] = { ...plant, quantity: 1 };
+      }
+  
+      return acc;
+    }, {})
+  );  
 
   const handleFindPlants = () => {
     const conditions = {
@@ -27,7 +34,7 @@ function SearchPlants() {
       light: light,
       momentOfDay: momentOfDay,
     };
-    const results = findPlants.getWeightedPlants(conditions, cantidad, true);
+    const results = getWeightedPlants(conditions, cantidad, true);
     setSelectedPlants(results);
   };
 
@@ -118,19 +125,32 @@ function SearchPlants() {
               <th>Nombre</th>
               <th>Rareza</th>
               <th>Descripción</th>
+              <th>Usos</th>
             </tr>
           </thead>
           <tbody>
-            {Object.values(groupedPlants).map(({ plant, quantity }, index) => (
+             {groupedPlants.map((plant, index) => (
               <tr key={`${plant.name}-${index}`}>
-                <td>{quantity}</td>
+                <td>{plant.quantity}</td>
                 <td>{plant.name}</td>
                 <td>{plant.rarity}</td>
                 <td>{plant.description}</td>
+                <td>{plant.uses}</td>
               </tr>
-            ))}
+             ))}
           </tbody>
         </table>
+        {selectedPlants.length > 0 && (
+          <button className="download-button" onClick={() => downloadPDF(groupedPlants.map(plant => ({          
+            "Cantidad": plant.quantity,
+            "Nombre": plant.name,
+            "Rareza": plant.rarity,
+            "Descripción": plant.description,
+            "Uso": plant.uses
+          })))}>
+            Descargar PDF
+          </button>
+        )}
       </div>
     </div>
   );

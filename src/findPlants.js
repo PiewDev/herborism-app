@@ -1,7 +1,8 @@
 import plantsData from "./json/plants.json";
 import statesConfig from "./json/statesConfig.json";
 import weightConfig from "./json/weightConfig.json";
-
+import { jsPDF } from "jspdf";
+import autoTable from "jspdf-autotable";
 function getProximityScore(current, target, array) {
     const currentIndex = array.indexOf(current);
     const targetIndex = array.indexOf(target);
@@ -18,7 +19,6 @@ function getProximityScore(current, target, array) {
  * @param {{biomes: string[], climates: string[], temperatures: string[], lights: string[], momentOfDays: string[]}} states 
  */
 function calculatePlantWeight(plant, conditions, states, weights) {
-    // Calcular puntuaciones de proximidad
     const biomeScore = getProximityScore(
         conditions.baseTerrain,
         plant.baseTerrain,
@@ -45,53 +45,44 @@ function calculatePlantWeight(plant, conditions, states, weights) {
 
     let momentOfDayScore;
     if (plant.momentOfDay === "All") {
-      momentOfDayScore = 1; // If plant's momentOfDay is "All", set score to 1
-    } else { 
+        momentOfDayScore = 1;
+    } else {
         momentOfDayScore = getProximityScore(
             conditions.momentOfDay,
             plant.momentOfDay,
-            states.momentOfDays // Use getProximityScore for other cases
+            states.momentOfDays
         );
     }
 
-    // Obtener peso de rareza
     const rarityWeight = weights.rarityWeights[plant.rarity] || 1;
-
-    // Peso total
     return (biomeScore + climateScore + tempScore + lightScore + momentOfDayScore) * rarityWeight;
 }
 
 function getWeightedPlants(conditions, number, allowDuplicates = true) {
-      // Paso 1: Filtrar plantas que NO tengan las condiciones actuales en su lista except
-      const validPlants = plantsData.filter(plant => {
+    const validPlants = plantsData.filter(plant => {
         return !plant.except.some(excludedCondition => 
-          excludedCondition === conditions.baseTerrain ||
-          excludedCondition === conditions.climate ||
-          excludedCondition === conditions.temperature ||
-          excludedCondition === conditions.light ||
-          (conditions.momentOfDay !== "All" && excludedCondition === conditions.momentOfDay)
+            excludedCondition === conditions.baseTerrain ||
+            excludedCondition === conditions.climate ||
+            excludedCondition === conditions.temperature ||
+            excludedCondition === conditions.light ||
+            (conditions.momentOfDay !== "All" && excludedCondition === conditions.momentOfDay)
         );
     });
 
-    
-
-
     if (validPlants.length === 0) return [];
 
-    // Paso 2: Calcular pesos (resto del algoritmo igual)
     const weightedPlants = validPlants.map(plant => ({
         plant,
         weight: calculatePlantWeight(plant, conditions, statesConfig, weightConfig)
     }));
 
-    // Paso 3: Selección ponderada
     const results = [];
     const candidates = [...weightedPlants];
     let remaining = number;
 
     while (remaining > 0 && candidates.length > 0) {
         const totalWeight = candidates.reduce((sum, c) => sum + c.weight, 0);
-        if (totalWeight <= 0) break; // Prevenir bucle infinito
+        if (totalWeight <= 0) break;
 
         const random = Math.random() * totalWeight;
         let cumulative = 0;
@@ -110,6 +101,40 @@ function getWeightedPlants(conditions, number, allowDuplicates = true) {
     return results.slice(0, number);
 }
 
-export default {
-    getWeightedPlants
+/**
+ * Función para generar y descargar un PDF de forma dinámica a partir de una lista de objetos.
+ * Se extraen los headers a partir de las claves del primer objeto y se generan las filas correspondientes.
+ * 
+ * @param {Array<Object>} list - Lista de objetos a incluir en la tabla del PDF.
+ */
+function downloadPDF(list) {
+    const doc = new jsPDF();
+
+    if (!list || list.length === 0) {
+        doc.text("No hay datos para mostrar", 10, 10);
+        doc.save("data.pdf");
+        return;
+    }
+
+    const columns = Object.keys(list[0]);
+    const rows = list.map(item =>
+        columns.map(key => {
+            const value = item[key];
+            return Array.isArray(value) ? value.join(", ") : value;
+        })
+    );
+
+    // Llamar a autoTable pasando el documento
+    autoTable(doc, {
+        head: [columns],
+        body: rows,
+    });
+
+    doc.save("data.pdf");
 }
+
+
+export {
+    getWeightedPlants,
+    downloadPDF
+};

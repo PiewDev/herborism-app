@@ -2,7 +2,7 @@
   {
     "name": "Melisa",
     "description": "Planta herbácea con hojas dentadas y ovaladas, de color verde claro.",
-    "Uses": "Se utiliza en infusiones para calmar los nervios y mejorar la digestión.",
+    "uses": "Se utiliza en infusiones para calmar los nervios y mejorar la digestión.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Temperate", 
@@ -14,7 +14,7 @@
   {
     "name": "Canela",
     "description": "Árbol de corteza marrón rojiza, con hojas lanceoladas y flores pequeñas y blancas.",
-    "Uses": "La corteza se utiliza como especia aromática y para mejorar la circulación.",
+    "uses": "La corteza se utiliza como especia aromática y para mejorar la circulación.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Hot",
@@ -26,7 +26,7 @@
   {
     "name": "Hierba de San Juan",
     "description": "Planta perenne con pequeñas flores amarillas agrupadas en racimos.",
-    "Uses": "Se utiliza en ungüentos cicatrizantes y para aliviar la ansiedad.",
+    "uses": "Se utiliza en ungüentos cicatrizantes y para aliviar la ansiedad.",
     "baseTerrain": "Fertile",
     "climate": "Humid",
     "temperature": "Temperate",
@@ -38,7 +38,7 @@
   {
     "name": "Lavanda",
     "description": "Arbusto aromático con tallos largos y flores violetas.",
-    "Uses": "Se utiliza en ungüentos relajantes, aromáticos y para aliviar dolores de cabeza.",
+    "uses": "Se utiliza en ungüentos relajantes, aromáticos y para aliviar dolores de cabeza.",
     "baseTerrain": "Fertile",
     "climate": "SemiArid",
     "temperature": "Temperate",
@@ -50,7 +50,7 @@
   {
     "name": "Caléndula",
     "description": "Planta anual con flores de color amarillo o naranja.",
-    "Uses": "Se utiliza en ungüentos antiinflamatorios, cicatrizantes y para aliviar la irritación de la piel.",
+    "uses": "Se utiliza en ungüentos antiinflamatorios, cicatrizantes y para aliviar la irritación de la piel.",
     "baseTerrain": "Fertile",
     "climate": "Neutral",
     "temperature": "Temperate",
@@ -62,7 +62,7 @@
   {
     "name": "Raíz de Estrella de Mar",
     "description": "Raíz de color púrpura con forma estrellada.",
-    "Uses": "Se utiliza en pociones de clarividencia y percepción aumentada.",
+    "uses": "Se utiliza en pociones de clarividencia y percepción aumentada.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -74,7 +74,7 @@
   {
     "name": "Hojas de Coral",
     "description": "Hojas de coral marino de color rojizo.",
-    "Uses": "Se utilizan en pociones de resistencia al veneno y purificación.",
+    "uses": "Se utilizan en pociones de resistencia al veneno y purificación.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -86,7 +86,7 @@
   {
     "name": "Arnica",
     "description": "Planta con tallos peludos y flores amarillas.",
-    "Uses": "Se utiliza en ungüentos antiinflamatorios y para aliviar el dolor muscular.",
+    "uses": "Se utiliza en ungüentos antiinflamatorios y para aliviar el dolor muscular.",
     "baseTerrain": "Rocky",
     "climate": "SemiHumid",
     "temperature": "Cool",
@@ -98,7 +98,7 @@
   {
     "name": "Manzanilla",
     "description": "Planta con pequeñas flores blancas o amarillas y un aroma similar a la manzana.",
-    "Uses": "Se utiliza en ungüentos calmantes, antiinflamatorios y para aliviar problemas digestivos.",
+    "uses": "Se utiliza en ungüentos calmantes, antiinflamatorios y para aliviar problemas digestivos.",
     "baseTerrain": "Fertile",
     "climate": "Neutral",
     "temperature": "Temperate",
@@ -110,7 +110,7 @@
   {
     "name": "Romero",
     "description": "Arbusto perenne con hojas lineales y flores azules, púrpuras o blancas.",
-    "Uses": "Se utiliza en ungüentos estimulantes, revitalizantes y para mejorar la circulación.",
+    "uses": "Se utiliza en ungüentos estimulantes, revitalizantes y para mejorar la circulación.",
     "baseTerrain": "Fertile",
     "climate": "SemiArid",
     "temperature": "Warm",
@@ -122,7 +122,7 @@
   {
     "name": "Hojas de Escarcha",
     "description": "Hojas cristalizadas que brillan con una luz tenue en la oscuridad.",
-    "Uses": "Se utilizan en pociones de resistencia al frío y protección contra la congelación.",
+    "uses": "Se utilizan en pociones de resistencia al frío y protección contra la congelación.",
     "baseTerrain": "Rocky",
     "climate": "SemiHumid",
     "temperature": "Cold",
@@ -134,7 +134,7 @@
   {
     "name": "Musgo de la Aurora",
     "description": "Musgo luminoso que emite una luz suave en la oscuridad.",
-    "Uses": "Se utiliza en pociones de visión en la oscuridad y detección de magia.",
+    "uses": "Se utiliza en pociones de visión en la oscuridad y detección de magia.",
     "baseTerrain": "Rocky",
     "climate": "Humid",
     "temperature": "Cool",
@@ -146,7 +146,7 @@
   {
     "name": "Aloe Vera",
     "description": "Planta suculenta con hojas carnosas y puntiagudas.",
-    "Uses": "Se utiliza en ungüentos hidratantes y calmantes para quemaduras solares.",
+    "uses": "Se utiliza en ungüentos hidratantes y calmantes para quemaduras solares.",
     "baseTerrain": "Dry",
     "climate": "SemiArid",
     "temperature": "Hot",
@@ -158,7 +158,7 @@
   {
     "name": "Coco",
     "description": "Fruto de forma redonda con una cáscara dura y fibrosa.",
-    "Uses": "Se utiliza en ungüentos hidratantes y suavizantes para la piel.",
+    "uses": "Se utiliza en ungüentos hidratantes y suavizantes para la piel.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -170,7 +170,7 @@
   {
     "name": "Papaya",
     "description": "Fruto de forma alargada con pulpa anaranjada y semillas negras.",
-    "Uses": "Se utiliza en ungüentos exfoliantes y regeneradores de la piel.",
+    "uses": "Se utiliza en ungüentos exfoliantes y regeneradores de la piel.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -182,7 +182,7 @@
   {
     "name": "Raíz de Marfil",
     "description": "Raíz blanca con propiedades fortificantes.",
-    "Uses": "Se utiliza en pociones de fortaleza y resistencia física.",
+    "uses": "Se utiliza en pociones de fortaleza y resistencia física.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -194,7 +194,7 @@
   {
     "name": "Flor de la Serpiente",
     "description": "Flor de colores brillantes que atrae a las serpientes.",
-    "Uses": "Se utiliza en pociones de persuasión y encantamiento animal.",
+    "uses": "Se utiliza en pociones de persuasión y encantamiento animal.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -206,7 +206,7 @@
   {
     "name": "Té de Árbol (Melaleuca)",
     "description": "Arbusto con hojas puntiagudas y pequeñas flores blancas.",
-    "Uses": "Se utiliza en ungüentos antibacterianos y antifúngicos.",
+    "uses": "Se utiliza en ungüentos antibacterianos y antifúngicos.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -218,7 +218,7 @@
   {
     "name": "Ylang-Ylang",
     "description": "Árbol con flores amarillas fragantes.",
-    "Uses": "Se utiliza en ungüentos relajantes y aromáticos.",
+    "uses": "Se utiliza en ungüentos relajantes y aromáticos.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -230,7 +230,7 @@
   {
     "name": "Tamarindo",
     "description": "Árbol con frutos de pulpa ácida y fibrosa.",
-    "Uses": "Se utiliza en ungüentos exfoliantes y regeneradores de la piel.",
+    "uses": "Se utiliza en ungüentos exfoliantes y regeneradores de la piel.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -242,7 +242,7 @@
   {
     "name": "Raíz de Coral",
     "description": "Raíz roja que crece en las profundidades marinas.",
-    "Uses": "Se utiliza en pociones de respiración acuática y natación mejorada.",
+    "uses": "Se utiliza en pociones de respiración acuática y natación mejorada.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -254,7 +254,7 @@
   {
     "name": "Flor de las Mareas",
     "description": "Flor que florece solo durante las mareas altas.",
-    "Uses": "Se utiliza en pociones de control del clima y manipulación de agua.",
+    "uses": "Se utiliza en pociones de control del clima y manipulación de agua.",
     "baseTerrain": "Muddy",
     "climate": "Humid",
     "temperature": "Warm",
@@ -266,7 +266,7 @@
   {
     "name": "Raíz del Sabio",
     "description": "Raíz dorada con propiedades que aumentan la sabiduría.",
-    "Uses": "Se utiliza en pociones de sabiduría aumentada y claridad mental.",
+    "uses": "Se utiliza en pociones de sabiduría aumentada y claridad mental.",
     "baseTerrain": "Fertile",
     "climate": "Neutral",
     "temperature": "Temperate",
@@ -278,7 +278,7 @@
   {
     "name": "Lágrimas de Cosechador",
     "description": "Flor azul que solo florece durante la cosecha.",
-    "Uses": "Se utiliza en pociones de suerte y fortuna.",
+    "uses": "Se utiliza en pociones de suerte y fortuna.",
     "baseTerrain": "Fertile",
     "climate": "Neutral",
     "temperature": "Temperate",
@@ -290,7 +290,7 @@
   {
     "name": "Ajenjo",
     "description": "Planta con tallos altos y hojas dentadas de color verde grisáceo.",
-    "Uses": "Se utiliza en ungüentos analgésicos y antiinflamatorios.",
+    "uses": "Se utiliza en ungüentos analgésicos y antiinflamatorios.",
     "baseTerrain": "Rich",
     "climate": "SemiHumid",
     "temperature": "Cool",
@@ -302,7 +302,7 @@
   {
     "name": "Datura",
     "description": "Planta con grandes flores blancas o moradas y hojas lobuladas.",
-    "Uses": "Se utiliza en ungüentos alucinógenos y sedantes.",
+    "uses": "Se utiliza en ungüentos alucinógenos y sedantes.",
     "baseTerrain": "Rich",
     "climate": "SemiHumid",
     "temperature": "Cool",
@@ -314,7 +314,7 @@
   {
     "name": "Belladona",
     "description": "Planta con tallos altos, flores moradas y frutos rojos brillantes.",
-    "Uses": "Se utiliza en ungüentos analgésicos y relajantes musculares.",
+    "uses": "Se utiliza en ungüentos analgésicos y relajantes musculares.",
     "baseTerrain": "Rich",
     "climate": "SemiHumid",
     "temperature": "Cool",
@@ -326,7 +326,7 @@
   {
     "name": "Espinas de Sombra",
     "description": "Espinas negras que crecen en los bosques oscuros.",
-    "Uses": "Se utilizan en pociones de sigilo y ocultamiento.",
+    "uses": "Se utilizan en pociones de sigilo y ocultamiento.",
     "baseTerrain": "Rich",
     "climate": "SemiHumid",
     "temperature": "Cool",
@@ -338,7 +338,7 @@
   {
     "name": "Flor del Susurro",
     "description": "Flor pálida que susurra en la brisa del bosque.",
-    "Uses": "Se utiliza en pociones de ilusión y encantamiento.",
+    "uses": "Se utiliza en pociones de ilusión y encantamiento.",
     "baseTerrain": "Rich",
     "climate": "SemiHumid",
     "temperature": "Cool",
@@ -350,7 +350,7 @@
   {
     "name": "Menta",
     "description": "Planta con hojas dentadas y aromáticas de color verde oscuro.",
-    "Uses": "Se utiliza en infusiones para aliviar problemas digestivos y para refrescar el aliento.",
+    "uses": "Se utiliza en infusiones para aliviar problemas digestivos y para refrescar el aliento.",
     "baseTerrain": "Fertile",
     "climate": "Humid",
     "temperature": "Temperate",
@@ -362,7 +362,7 @@
   {
     "name": "Ginseng",
     "description": "Planta con raíces carnosas y tallos con hojas palmadas.",
-    "Uses": "Se utiliza en infusiones y ungüentos para aumentar la energía y fortalecer el sistema inmunológico.",
+    "uses": "Se utiliza en infusiones y ungüentos para aumentar la energía y fortalecer el sistema inmunológico.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Temperate",
@@ -374,7 +374,7 @@
   {
     "name": "Ortiga",
     "description": "Planta con hojas dentadas y peludas que producen una sensación de picor al contacto.",
-    "Uses": "Se utiliza en ungüentos para aliviar la inflamación y el dolor muscular, así como en infusiones para mejorar la circulación.",
+    "uses": "Se utiliza en ungüentos para aliviar la inflamación y el dolor muscular, así como en infusiones para mejorar la circulación.",
     "baseTerrain": "Fertile",
     "climate": "Neutral",
     "temperature": "Temperate",
@@ -386,7 +386,7 @@
   {
     "name": "Té",
     "description": "Arbusto con hojas verde oscuro que se utilizan para hacer infusiones.",
-    "Uses": "Se utiliza en infusiones para aumentar la energía, mejorar la concentración y promover la salud general.",
+    "uses": "Se utiliza en infusiones para aumentar la energía, mejorar la concentración y promover la salud general.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Temperate",
@@ -398,7 +398,7 @@
   {
     "name": "Hinojo",
     "description": "Planta con tallos huecos y flores amarillas.",
-    "Uses": "Se utiliza en infusiones y ungüentos para aliviar problemas digestivos y cólicos, así como para aumentar la producción de leche materna.",
+    "uses": "Se utiliza en infusiones y ungüentos para aliviar problemas digestivos y cólicos, así como para aumentar la producción de leche materna.",
     "baseTerrain": "Fertile",
     "climate": "Neutral",
     "temperature": "Temperate",
@@ -410,7 +410,7 @@
   {
     "name": "Valeriana",
     "description": "Planta con flores rosadas o blancas y raíces con un aroma distintivo.",
-    "Uses": "Se utiliza en infusiones y ungüentos para calmar los nervios, reducir la ansiedad y mejorar la calidad del sueño.",
+    "uses": "Se utiliza en infusiones y ungüentos para calmar los nervios, reducir la ansiedad y mejorar la calidad del sueño.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Cool",
@@ -422,7 +422,7 @@
   {
     "name": "Pasiflora",
     "description": "Enredadera con flores exóticas de colores brillantes.",
-    "Uses": "Se utiliza en infusiones y ungüentos para aliviar el estrés, la ansiedad y mejorar la calidad del sueño.",
+    "uses": "Se utiliza en infusiones y ungüentos para aliviar el estrés, la ansiedad y mejorar la calidad del sueño.",
     "baseTerrain": "Fertile",
     "climate": "Humid",
     "temperature": "Warm",
@@ -434,7 +434,7 @@
   {
     "name": "Consuelda",
     "description": "Planta con hojas grandes y peludas, y flores de color púrpura o blanco.",
-    "Uses": "Se utiliza en ungüentos para acelerar la curación de heridas, contusiones y fracturas.",
+    "uses": "Se utiliza en ungüentos para acelerar la curación de heridas, contusiones y fracturas.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Temperate",
@@ -446,7 +446,7 @@
   {
     "name": "Milenrama",
     "description": "Planta con hojas finamente divididas y pequeñas flores blancas o rosadas.",
-    "Uses": "Se utiliza en infusiones y ungüentos para aliviar problemas digestivos, menstruales y para detener el sangrado.",
+    "uses": "Se utiliza en infusiones y ungüentos para aliviar problemas digestivos, menstruales y para detener el sangrado.",
     "baseTerrain": "Fertile",
     "climate": "Neutral",
     "temperature": "Temperate",
@@ -458,7 +458,7 @@
   {
     "name": "Lirio de la Araña Azul",
     "description": "Flor con pétalos delgados y largos de color azul intenso, con un centro oscuro que se asemeja a una telaraña.",
-    "Uses": "Se utiliza en pociones y ungüentos para una curación ultra rápida de heridas graves y enfermedades, pero su uso es altamente peligroso y puede tener efectos secundarios graves en la mente.",
+    "uses": "Se utiliza en pociones y ungüentos para una curación ultra rápida de heridas graves y enfermedades, pero su uso es altamente peligroso y puede tener efectos secundarios graves en la mente.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Cool",
@@ -470,7 +470,7 @@
   {
     "name": "Espino Sangriento",
     "description": "Arbusto espinoso con pequeñas flores rojas y hojas oscuras.",
-    "Uses": "Sus espinas contienen una savia roja que se utiliza en ungüentos para detener hemorragias y tratar heridas graves.",
+    "uses": "Sus espinas contienen una savia roja que se utiliza en ungüentos para detener hemorragias y tratar heridas graves.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Cool",
@@ -482,7 +482,7 @@
   {
     "name": "Corazón de las Sombras",
     "description": "Una flor negra con pétalos que parecen absorber la luz a su alrededor.",
-    "Uses": "Sus pétalos tienen propiedades sedantes y se utilizan en infusiones para aliviar el insomnio y calmar los nervios, pero su consumo excesivo puede sumir al individuo en una profunda melancolía.",
+    "uses": "Sus pétalos tienen propiedades sedantes y se utilizan en infusiones para aliviar el insomnio y calmar los nervios, pero su consumo excesivo puede sumir al individuo en una profunda melancolía.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Cool",
@@ -494,7 +494,7 @@
   {
     "name": "Hojas de la Noche Eterna",
     "description": "Hojas de un verde oscuro casi negro que brillan ligeramente en la oscuridad.",
-    "Uses": "Se utilizan en pociones para mejorar la visión nocturna y aumentar la percepción en la oscuridad, pero su consumo prolongado puede causar alucinaciones y paranoia.",
+    "uses": "Se utilizan en pociones para mejorar la visión nocturna y aumentar la percepción en la oscuridad, pero su consumo prolongado puede causar alucinaciones y paranoia.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Cool",
@@ -506,7 +506,7 @@
   {
     "name": "Susurros del Crepúsculo",
     "description": "Una enredadera con flores blancas que emiten un suave resplandor en la penumbra.",
-    "Uses": "Las flores se utilizan en ungüentos y aceites esenciales para aliviar el estrés, inducir la relajación y promover el sueño reparador, pero su aroma puede provocar sueños vívidos y perturbadores.",
+    "uses": "Las flores se utilizan en ungüentos y aceites esenciales para aliviar el estrés, inducir la relajación y promover el sueño reparador, pero su aroma puede provocar sueños vívidos y perturbadores.",
     "baseTerrain": "Rich",
     "climate": "Humid",
     "temperature": "Cool",
@@ -518,7 +518,7 @@
   {
     "name": "Rhodiola Rosea",
     "description": "Planta perenne de alta montaña con flores amarillas o rosadas.",
-    "Uses": "Se utiliza en tónicos restauradores para combatir la fatiga, aumentar la resistencia y mejorar la claridad mental.",
+    "uses": "Se utiliza en tónicos restauradores para combatir la fatiga, aumentar la resistencia y mejorar la claridad mental.",
     "baseTerrain": "Rocky",
     "climate": "Cold",
     "temperature": "Cool",
