@@ -513,7 +513,7 @@
     "rarity": "Rare",
     "except": ["Hot", "Dry", "Arid", "Rocky"],
     "light": "Low",
-    "momentOfDay": "Evening"
+    "momentOfDay": "Sunset"
   },
   {
     "name": "Rhodiola Rosea",
@@ -524,6 +524,18 @@
     "temperature": "Cool",
     "rarity": "Uncommon",
     "except": ["Hot","Warm", "Humid", "Muddy","Rich", "Fertile"],
+    "light": "Medium",
+    "momentOfDay": "All"
+  },
+  {
+    "name": "Jengibre",
+    "description": "Planta con rizoma subterráneo y tallos verdes.",
+    "uses": "Se utiliza en infusiones, ungüentos y como especia para aliviar problemas digestivos, náuseas y mejorar la circulación, también es energizante.",
+    "baseTerrain": "Fertile",
+    "climate": "Humid",
+    "temperature": "Warm",
+    "rarity": "Common",
+    "except": ["Cold", "Rocky", "Arid", "Dry", "Cool"],
     "light": "Medium",
     "momentOfDay": "All"
   }
